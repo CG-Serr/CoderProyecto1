@@ -7,7 +7,7 @@
 
 /*INDEXXX*/
     /*Titulo*/
-    h1{
+     h1{
     display: block;
     align-content: center;
      color:#fee3d6;
@@ -17,7 +17,7 @@
      text-align: center;
      height: 60px;
      margin-top: 10px;
-    }
+    } 
   
     body {
         background-color: #f8d6c9;
@@ -41,8 +41,8 @@
         border-radius: 1rem;
     }
 
-    /*Boton de navegacion*/
-        .navegador {
+    /*Boton de navegacion blog y tienda*/
+        .navegador, .navegadort{
         display: flex;              /* pone los li en línea */
          gap: 2rem;               /* separación entre botones */
         list-style: none;       /* sin viñetas */
@@ -50,7 +50,7 @@
         justify-content: center;
         margin: 25px;
         }
-        .navegador a {
+        .navegador a, .navegadort a{
         padding: 0.5rem 0.5rem;
         text-decoration: none;
         border: 2px solid #bc3232 ;
@@ -58,7 +58,7 @@
         background-color: #e65757;
         color:#fcc3ac;
     }   
-      .navegador a:hover{
+      .navegador a:hover, .navegadort a:hover{
         background-color: #bd55ac;
       }
 
@@ -199,24 +199,34 @@ footer {
 
 
 
-/*TIENDA*/
+/* TIENDA */
 
-
-      .navegadort{
-    display: flex;       /* pone los li en línea */
-    gap: 2rem;               /* separación entre botones */
-    list-style: none;       /* sin viñetas */
-    font-size:larger;
-    justify-content: center;
-    margin: 25px;
+h2 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-.navegadort a{
-      padding: 0.5rem 0.5rem;
-    text-decoration: none;
-    border: 1px solid #ee4444 ;
-    border-radius: 3rem;
-    background-color: #e65757;
-    color:#fcc3ac;
-
+.new, .textiles {
+  display: grid;
+  justify-items: center;
+  border: 3px solid #bc3232 ;
+        border-radius: 1rem;
+        background-color:#f7405b;
+        height: 450px;
+        width: 450px;
+        margin: 20px;
 }
+
+.new img, .textiles img {
+  padding: 10px;
+  height: 400px;
+  /* width: 50%; opcional, para que todas ocupen bien el espacio */
+  /* height: auto; */
+}
+
+.art-tienda{
+  display: flex;
+  justify-content: center;
+}
+
