@@ -6,18 +6,20 @@
 }
 
 /*INDEXXX*/
-    /*Titulo*/
-     h1{
-    display: block;
-    align-content: center;
-     color:#fee3d6;
-     background-color: #f7405b;
-     border: 3px solid #bc3232 ;
-        border-radius: 3rem;
-     text-align: center;
-     height: 60px;
-     margin-top: 10px;
-    } 
+   
+      header h1, .head {
+  display: block;
+  align-content: center;
+  color: #fee3d6 !important;
+  background-color: #f7405b !important;
+  border: 3px solid #bc3232 !important;
+  border-radius: 3rem;
+  text-align: center;
+  height: 60px;
+  margin-top: 10px;
+}
+
+
   
     body {
         background-color: #f8d6c9;
@@ -147,6 +149,7 @@ footer {
   
 
 
+
 /*CONTACTO*/
         .contact{
             margin: 30px;
@@ -179,19 +182,32 @@ footer {
         
 /*POPULARES PAG*/
 
-        .main_populares{
-          padding:15px;
-          margin:30px;
-          display: flex;
-          flex-direction: column;
-        }
+/*POPULARES PAG*/
 
+   .main_populares {
+  width: 1200px;           /* ancho fijo del bloque */
+  margin: 25px auto;       /* centrado horizontal */
+  padding: 25px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  background-color: #f7405b;
+  border-radius: 1rem;
+}
 
+.main_populares_img {
+  width: 100%;
+  height: 800px;           /* altura fija del carrusel */
+  overflow: hidden;        /* recorta cualquier exceso de imagen */
+}
 
+#carousel .carousel-inner img {
+  width: 100%;             /* ocupa todo el ancho del carrusel */
+  height: 100%;            /* ocupa toda la altura del contenedor */
+  object-fit: cover;       /* recorta la imagen si no coincide con proporción */
+}
 
-
-
-
+      
 
 
 
@@ -201,21 +217,35 @@ footer {
 
 /* TIENDA */
 
-h2 {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
 
+
+.titulo-tienda {
+  display: block;
+  align-content: center;
+  color: #fee3d6 !important;
+  background-color: #f7405b !important;
+  border: 3px solid #bc3232 !important;
+  border-radius: 3rem;
+  text-align: center;
+  height: 80px;
+  margin-top: 10px;
+}
 .new, .textiles {
   display: grid;
   justify-items: center;
   border: 3px solid #bc3232 ;
         border-radius: 1rem;
         background-color:#f7405b;
-        height: 450px;
+        height: 470px;
         width: 450px;
         margin: 20px;
+        padding: 10px;
+        font-size: larger;
+    
+}
+
+.new h3, .textiles h3 {
+  color: #f8d6c9;
 }
 
 .new img, .textiles img {

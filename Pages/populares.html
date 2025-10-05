@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mas Pupulares ShiMustDraw</title>
-    <link rel="stylesheet" href="/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Más Populares - ShiMustDraw</title>
 
+  <!-- Bootstrap primero -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+
+  <!-- ✅ Tu hoja de estilos DESPUÉS y con ruta relativa correcta -->
+  <link rel="stylesheet" href="/estilos.css">
+
+  <!-- Scripts de Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </head>
+
 
 <body>
     <header>
@@ -33,16 +48,34 @@
         Si te quedaste con ganas de más, te invito a pasear por todo el blog! nwn </p>
 
 
-<div class="main_populares_img">
-        <img src="/Imagenes/majoras.jpg" alt="Mascara de legend of zelda" height="250">
-        <img src="/Imagenes/ymir.jpg" alt="Escena de attack on titan" height="250">
-        <img src="/Imagenes/stranding.jpg" alt="Retrato de Clifford Unger" height="250">
-        <img src="/Imagenes/sh3.jpg" alt="Cuadro de Valtiel de Silent Hill 3" height=250>
-        <img src="/Imagenes/Ilustración.jpg" alt="Retrato de Heather Mason" height="250">
-        <img src="/Imagenes/gorgona.png" alt="Dibujo digital de una gorgona mitologica" height="250">
-        
-        <a>Ver mas...</a>
-</div>
+        <div class="main_populares_img">
+
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="/Imagenes/majoras.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Imagenes/ymir.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Imagenes/stranding.jpg" class="d-block w-100" alt="...">
+            </div>
+            
+            </div>
+                <!-- Botones funcionales -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+            </div>
+
+        </div>
 
 
     </main>
@@ -59,4 +92,5 @@
     </footer>
 
 </body>
+
 </html>
