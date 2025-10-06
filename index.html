@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShiMustDraw</title>
+  <!--  Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/estilos.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <header>
-        <!-- Titulo -->
-        <h1>ShiMustDraw</h1>
-        <!-- Boton de navegacion -->
-    <nav>
-        <ul class="navegador">
-            <li><a href="/index.html">Inicio</a></li>
-
-            <li><a href="/Pages/acercade.html">Acerca De</a></li>
-
-            <li><a href="/Pages/contacto.html">Contacto</a></li>
-
-            <li><a href="/Pages/tienda.html" target="_blank">Tienda</a></li>
-        </ul>
-      
-    </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+            <div class="container-fluid">
+                <a class="navbar-brand titulo" href="index.html">ShiMustDraw</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="/Pages/acercade.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Pages/tienda.html" target="_blank">Tienda</a>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="grilla">
@@ -49,15 +63,15 @@
 
 
    <section class="indexpopulares">
-  <a href="/Pages/populares.html">Publicaciones Populares</a>
+    <a href="/Pages/populares.html">Publicaciones Populares</a>
   
-  <div class="imagenes">
-    <img src="Imagenes/majoras.jpg" alt="Mascara de legend of zelda" height="150">
-    <img src="Imagenes/ymir.jpg" alt="Escena de attack on titan" height="150">
-    <img src="Imagenes/Ilustración.jpg" alt="Retrato de Clifford Unger" height="150">
-    <img src="Imagenes/sh3.jpg" alt="Cuadro de Valtiel de Silent Hill 3" height="150">
-  </div>
-</section>
+        <div class="imagenes">
+            <img src="Imagenes/majoras.jpg" alt="Mascara de legend of zelda" height="150">
+            <img src="Imagenes/ymir.jpg" alt="Escena de attack on titan" height="150">
+            <img src="Imagenes/Ilustración.jpg" alt="Retrato de Clifford Unger" height="150">
+            <img src="Imagenes/sh3.jpg" alt="Cuadro de Valtiel de Silent Hill 3" height="150">
+        </div>
+    </section>
 
     </main>
     
